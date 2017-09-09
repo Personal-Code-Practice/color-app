@@ -1,0 +1,38 @@
+// Place all the styles related to the Colors controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+  padding: 10px;
+  width: 310px;
+  background: black;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.box {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.a {
+  background: #f0f8ff;
+}
+
+.b {
+  background: #e6e6fa;
+}
+
+.c {
+  background: #fff0f5;
+}
+
+.d {
+  background: #ffe4e1;
+}
+
+.e {
+  background: #eecbad;
+}

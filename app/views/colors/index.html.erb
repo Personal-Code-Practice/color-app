@@ -1,0 +1,86 @@
+<br>
+<h1 style="color: <%= @color %>">Chameleon (<%= @color %>)</h1>
+<h3>Custom Palette</h3>
+<p>My palette exists? <%= @red.palette.respond_to? :my_palette %></p>
+<p>My palette colors: <%= @red.palette.my_palette %></p>
+<hr>
+<h3>Custom Palette</h3>
+<p><%= @custom_palette %></p>
+<hr>
+<h3>Serializing Color: Complement of red</h3>
+<p>Default: <%= 'red'.paint.complement %></p>
+<p>HSV: <%= 'red'.paint.complement.to_hsv %></p>
+<p>HSL: <%= 'red'.paint.complement.to_hsl %></p>
+<p>HEX: <%= 'red'.paint.complement.to_hex %></p>
+<p>HEX8: <%= 'red'.paint.complement.to_hex8 %></p>
+<p>RGB: <%= 'red'.paint.complement.to_rgb %></p>
+<hr>
+<h3>Complement Palette Array</h3>
+<p><%= @red.palette.complement %></p>
+<p><%= @red.palette.complement(as: :name) %></p>
+<p><%= @red.palette.complement(as: :hex) %></p>
+<hr>
+<h3>Triad Palette Array</h3>
+<p><%= @red.palette.triad %></p>
+<p><%= @red.palette.triad(as: :name) %></p>
+<p><%= @red.palette.triad(as: :hex) %></p>
+<hr>
+<h3>Tetrad Palette Array</h3>
+<p><%= @red.palette.tetrad %></p>
+<p><%= @red.palette.tetrad(as: :name) %></p>
+<p><%= @red.palette.tetrad(as: :hex) %></p>
+<hr>
+<h3>Split Complement Palette Array</h3>
+<p><%= @red.palette.split_complement %></p>
+<p><%= @red.palette.split_complement(as: :name) %></p>
+<p><%= @red.palette.split_complement(as: :hex) %></p>
+<hr>
+<h3>Analogous Palette Array</h3>
+<p><%= @red.palette.analogous %></p>
+<p><%= @red.palette.analogous(as: :hex) %></p>
+<p><%= @red.palette.analogous(size: 3) %></p>
+<p><%= @red.palette.analogous(size: 3, slice_by: 90) %></p>
+<hr>
+<h3>Monochromatic Palette Array</h3>
+<p><%= @red.palette.monochromatic %></p>
+<p><%= @red.palette.monochromatic(as: :hex) %></p>
+<p><%= @red.palette.monochromatic(size: 6) %></p>
+<hr>
+<h3>Equal Other</h3>
+<p><%= @red.eql? '#f00'.paint %></p>
+<hr>
+<h3>Self</h3>
+<p><%= @red.paint %></p>
+<hr>
+<h3>Harmonies</h3>
+<p><%= @red.palette %></p>
+<hr>
+<h3>Lighten</h3>
+<p><%= @red.lighten %></p>
+<hr>
+<h3>Brighten</h3>
+<p><%= @red.brighten %></p>
+<hr>
+<h3>Grayscale</h3>
+<p><%= @red.grayscale %></p>
+<hr>
+<h3>Spin</h3>
+<p><%= @red.spin(30) %></p>
+<p><%= @red.spin(60) %></p>
+<p><%= @red.spin(90) %></p>
+<hr>
+<h3>Desaturate</h3>
+<p><%= @red.desaturate %></p>
+<p><%= @red.desaturate(20) %></p>
+<hr>
+<h3>Saturate</h3>
+<p><%= '#123'.paint.saturate %></p>
+<p><%= '#123'.paint.saturate(20) %></p>
+<hr>
+
+
+
+
+
+
+
